@@ -2,11 +2,15 @@ import React from 'react';
 import { Page } from './Page';
 
 export const PagesList = ({pages, fetchArticle}) => {
-	return <>
+	return (
+		<> 
 		{
 			pages.map((page, idx) => {
-				return <Page page={page} key={idx} fetchArticle={fetchArticle} />
+				return (
+					<Page page={page} key={idx} fetchArticle={fetchArticle} />
+				)
 			})
 		}
 	</>
+	)
 } 
